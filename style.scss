@@ -1,1 +1,106 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+  --colorA:  red;
+  --colorB: yellow;
+
+  font-family: Ubuntu, serif;
+  font-size: 16px;
+  background: linear-gradient(90deg, var(--colorA), var(--colorB));
+  // align-content: center;
+  i {
+    font-size: 25px;
+    color: var(--colorA);
+  }
+}
+
+#background-sheet {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 30px 50px -20px rgb(70, 70, 70);
+
+  width: 70vw;
+  height: 50vh;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  z-index: -1;
+}
+
+main {
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
+  // max-width: 70vw;
+  
+  display: flex;
+  justify-content: space-around;
+
+  #photo {
+    width: 40vw;
+    height: 50vh;
+    background-image: url(https://st2.depositphotos.com/1762405/10286/i/950/depositphotos_102867168-stock-photo-swallow-over-water-with-reflection.jpg);
+    border-radius: 10px;
+    box-shadow: 10px 30px 50px -20px rgb(70, 70, 70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 0.2em;
+      bottom: 0.2em;
+    }
+  }
+
+  #info {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    padding-left: 5vmin;
+    // align-content: flex-end;
+    justify-content: space-around;
+    align-self: flex-end;
+  }
+
+  #socials {
+    display: flex;
+    justify-content: space-around
+  }
+}
+
+#about-header {
+  text-transform: uppercase;
+  color: var(--colorA);
+  padding-bottom: 1vh;
+}
+
+header#name {
+  position: absolute;
+  top: 18vh;
+  left: 50vw;
+  z-index: 3;  
+  color: var(--colorA);
+  font-size: 1.2em;
+  h1:nth-child(even) {
+    padding-left: 4vw;
+  }
+}
+
+footer {
+  position: absolute;
+  top: 70vh;
+  left: 20vw;
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+
+  .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
